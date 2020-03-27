@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/rl_news_item"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/default_margin"
+        android:layout_marginTop="@dimen/default_margin">
+        <ImageView
+            android:id="@+id/iv_news_item_image"
+            android:layout_width="@dimen/_70sdp"
+            android:layout_height="@dimen/_70sdp"
+            android:scaleType="centerCrop"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/im_test"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="@dimen/dimen_5dp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:layout_toStartOf="@+id/iv_news_item_image"
+            android:layout_toLeftOf="@+id/iv_news_item_image"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/tvTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="2"
+                android:ellipsize="marquee"
+                android:textColor="@color/colorGray"
+                android:textSize="@dimen/font_size_larger_small"
+                android:text="@string/new_description_demo"/>
+            <TextView
+                android:id="@+id/tv_caption"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_5dp"
+                android:textSize="@dimen/font_size_small"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:lines="1"
+                android:text="Hace 5 min"
+                android:textColor="@color/colorCyan"/>
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,55 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="default_margin">@dimen/_7sdp</dimen>
+    <dimen name="title_font_size">@dimen/_25sdp</dimen>
+    <dimen name="no_data_text_size">@dimen/_30sdp</dimen>
+    <dimen name="search_margin_bottom">@dimen/_20sdp</dimen>
+    <dimen name="search_margin_left">@dimen/_15sdp</dimen>
+    <dimen name="search_margin_right">@dimen/_15sdp</dimen>
+    <dimen name="search_margin_top">@dimen/_10sdp</dimen>
+    <dimen name="search_layout_height">@dimen/_35sdp</dimen>
+    <dimen name="search_edit_text_padding">@dimen/_6sdp</dimen>
+    <dimen name="search_image_btn_width">@dimen/_50sdp</dimen>
+
+    <dimen name="font_size_tiny">@dimen/_6sdp</dimen>
+    <dimen name="font_size_small">@dimen/_8sdp</dimen>
+    <dimen name="font_size_normal">@dimen/_13sdp</dimen>
+    <dimen name="font_size_large">@dimen/_21sdp</dimen>
+    <dimen name="font_size_huge">@dimen/_27sdp</dimen>
+    <dimen name="font_size_larger_normal">@dimen/_16sdp</dimen>
+    <dimen name="font_size_larger_small">@dimen/_11sdp</dimen>
+
+    <dimen name="dimen_1dp">@dimen/_1sdp</dimen>
+    <dimen name="dimen_2dp">@dimen/_2sdp</dimen>
+    <dimen name="dimen_3dp">@dimen/_3sdp</dimen>
+    <dimen name="dimen_4dp">@dimen/_4sdp</dimen>
+    <dimen name="dimen_5dp">@dimen/_5sdp</dimen>
+    <dimen name="dimen_6dp">@dimen/_6sdp</dimen>
+    <dimen name="dimen_7dp">@dimen/_7sdp</dimen>
+    <dimen name="dimen_8dp">@dimen/_8sdp</dimen>
+    <dimen name="dimen_9dp">@dimen/_9sdp</dimen>
+    <dimen name="dimen_10dp">@dimen/_10sdp</dimen>
+    <dimen name="dimen_11dp">@dimen/_11sdp</dimen>
+    <dimen name="dimen_12dp">@dimen/_12sdp</dimen>
+    <dimen name="dimen_13dp">@dimen/_13sdp</dimen>
+    <dimen name="dimen_14dp">@dimen/_14sdp</dimen>
+    <dimen name="dimen_15dp">@dimen/_15sdp</dimen>
+    <dimen name="dimen_16dp">@dimen/_16sdp</dimen>
+    <dimen name="dimen_17dp">@dimen/_17sdp</dimen>
+    <dimen name="dimen_18dp">@dimen/_18sdp</dimen>
+    <dimen name="dimen_19dp">@dimen/_19sdp</dimen>
+    <dimen name="dimen_20dp">@dimen/_20sdp</dimen>
+    <dimen name="dimen_30dp">@dimen/_30sdp</dimen>
+    <dimen name="dimen_40dp">@dimen/_40sdp</dimen>
+    <dimen name="dimen_50dp">@dimen/_50sdp</dimen>
+    <dimen name="dimen_60dp">@dimen/_60sdp</dimen>
+    <dimen name="dimen_70dp">@dimen/_70sdp</dimen>
+    <dimen name="dimen_80dp">@dimen/_80sdp</dimen>
+    <dimen name="dimen_90dp">@dimen/_90sdp</dimen>
+    <dimen name="dimen_100dp">@dimen/_100sdp</dimen>
+    <dimen name="dimen_110dp">@dimen/_110sdp</dimen>
+    <dimen name="dimen_140dp">@dimen/_140sdp</dimen>
+
+    <dimen name="default_height_button">@dimen/_35sdp</dimen>
+    <dimen name="default_height_edt">@dimen/_40sdp</dimen>
+</resources>

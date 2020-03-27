@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/container"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/center"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent=".25" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="#FF9800"
+        app:layout_constraintBottom_toTopOf="@id/center"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/ivBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dimen_20dp"
+            android:src="@drawable/ic_back" />
+
+        <TextView
+            android:id="@+id/tvInicio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_30dp"
+            android:layout_marginRight="@dimen/dimen_20dp"
+            android:layout_toRightOf="@+id/ivBack"
+            android:text="@string/solicitar_asistencia"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/font_size_large" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/colorWhite"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/center">
+
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_70dp"
+            android:text="@string/buenos_aires"
+            android:textColor="@color/colorGray"
+            android:textSize="@dimen/font_size_large"
+            android:textStyle="bold"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            app:layout_constraintVertical_chainStyle="packed" />
+
+        <TextView
+            android:id="@+id/tvDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_5dp"
+            android:text="@string/buenos_aires_des"
+            android:textColor="@color/colorGray"
+            android:textSize="@dimen/font_size_normal"
+            android:layout_below="@+id/tvName"
+            android:layout_centerHorizontal="true"/>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/vSupport1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/dimen_20dp"
+            android:layout_below="@+id/tvDescription">
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline_ver"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent=".5" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline_hor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent=".5" />
+
+            <RelativeLayout
+                android:id="@+id/topLeft"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_margin="@dimen/dimen_10dp"
+                android:background="@color/colorCyanLight"
+                app:layout_constraintBottom_toTopOf="@+id/guideline_hor"
+                app:layout_constraintDimensionRatio="h,1:1"
+                app:layout_constraintHeight_default="percent"
+                app:layout_constraintHeight_percent=".45"
+                app:layout_constraintRight_toLeftOf="@+id/guideline_ver" >
+               <LinearLayout
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:orientation="vertical"
+                   android:gravity="center_horizontal"
+                   android:layout_centerInParent="true">
+                   <ImageView
+                       android:src="@drawable/user_photo_default"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"/>
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="@string/telefono"
+                       android:textColor="@color/colorGray"
+                       android:textSize="@dimen/font_size_normal"
+                       android:layout_marginTop="@dimen/dimen_20dp"/>
+                   <TextView
+                       android:id="@+id/tvChat"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="100"
+                       android:textColor="@color/colorGray"
+                       android:textSize="@dimen/font_size_normal"
+                       android:layout_marginTop="@dimen/dimen_5dp"/>
+               </LinearLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/topRight"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_margin="@dimen/dimen_10dp"
+                android:background="@color/colorCyanLight"
+                app:layout_constraintBottom_toTopOf="@+id/guideline_hor"
+                app:layout_constraintDimensionRatio="h,1:1"
+                app:layout_constraintHeight_default="percent"
+                app:layout_constraintHeight_percent=".45"
+                app:layout_constraintLeft_toRightOf="@+id/guideline_ver" >
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center_horizontal"
+                    android:layout_centerInParent="true">
+                    <ImageView
+                        android:src="@drawable/user_photo_default"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/correo_electronico"
+                        android:textColor="@color/colorGray"
+                        android:textSize="@dimen/font_size_normal"
+                        android:layout_marginTop="@dimen/dimen_20dp"/>
+                    <TextView
+                        android:id="@+id/tvCorreoElectronico"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="info@spc.com"
+                        android:textColor="@color/colorGray"
+                        android:textSize="@dimen/font_size_normal"
+                        android:layout_marginTop="@dimen/dimen_5dp"/>
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/bottomLeft"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_margin="@dimen/dimen_10dp"
+                android:background="@color/colorCyanLight"
+                app:layout_constraintDimensionRatio="h,1:1"
+                app:layout_constraintHeight_default="percent"
+                app:layout_constraintHeight_percent=".45"
+                app:layout_constraintRight_toLeftOf="@+id/guideline_ver"
+                app:layout_constraintTop_toBottomOf="@+id/guideline_hor" >
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center_horizontal"
+                    android:layout_centerInParent="true">
+                    <ImageView
+                        android:src="@drawable/user_photo_default"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/mensaje"
+                        android:textColor="@color/colorGray"
+                        android:textSize="@dimen/font_size_normal"
+                        android:layout_marginTop="@dimen/dimen_20dp"/>
+                    <TextView
+                        android:id="@+id/tvMensaje"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="100"
+                        android:textColor="@color/colorGray"
+                        android:textSize="@dimen/font_size_normal"
+                        android:layout_marginTop="@dimen/dimen_5dp"/>
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/bottomRight"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_margin="@dimen/dimen_10dp"
+                android:background="@color/colorCyanLight"
+                app:layout_constraintDimensionRatio="h,1:1"
+                app:layout_constraintHeight_default="percent"
+                app:layout_constraintHeight_percent=".45"
+                app:layout_constraintLeft_toRightOf="@+id/guideline_ver"
+                app:layout_constraintTop_toBottomOf="@+id/guideline_hor" >
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center_horizontal"
+                    android:layout_centerInParent="true">
+                    <ImageView
+                        android:src="@drawable/user_photo_default"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/telefono"
+                        android:textColor="@color/colorGray"
+                        android:textSize="@dimen/font_size_normal"
+                        android:layout_marginTop="@dimen/dimen_20dp"/>
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/vProximamente"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:background="@color/colorOrange"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/font_size_larger_small"
+                    android:text="@string/proximamente"
+                    android:gravity="center"
+                    android:padding="@dimen/_8sdp"/>
+
+            </RelativeLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout3"
+        android:layout_width="@dimen/dimen_110dp"
+        android:layout_height="@dimen/dimen_110dp"
+        android:background="@drawable/background_support_circle"
+        app:layout_constraintBottom_toBottomOf="@id/center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/center">
+
+        <ImageView
+            android:id="@+id/ivProfile"
+            android:layout_width="@dimen/dimen_60dp"
+            android:layout_height="@dimen/dimen_60dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/user_photo_default" />
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

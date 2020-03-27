@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/container"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/center"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent=".3" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/colorOrangeLight"
+        app:layout_constraintBottom_toTopOf="@id/center"
+        app:layout_constraintTop_toTopOf="parent">
+        <ImageView
+            android:id="@+id/ivCamera"
+            android:layout_width="@dimen/_90sdp"
+            android:layout_height="@dimen/_80sdp"
+            android:contentDescription="@null"
+            android:scaleType="fitXY"
+            android:layout_centerInParent="true"
+            android:src="@drawable/ic_camera"/>
+
+        <ImageView
+            android:id="@+id/ivAdd"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:contentDescription="@null"
+            android:scaleType="fitXY"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="@dimen/_10sdp"
+            android:src="@drawable/ic_add_new"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/colorWhite"
+        android:padding="@dimen/_20sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/center">
+
+        <TextView
+            android:id="@+id/tvTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2 september, 2020"
+            android:textSize="@dimen/font_size_larger_small"
+            android:textColor="@color/colorGray"
+            android:layout_marginTop="@dimen/dimen_10dp"/>
+
+        <EditText
+            android:id="@+id/edtTitulo"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_45sdp"
+            android:textColor="@color/colorGrey"
+            android:hint="@string/titulo"
+            android:lines="1"
+            android:singleLine="true"
+            android:textSize="@dimen/font_size_normal"
+            android:background="@drawable/background_edittext_gray"
+            android:padding="@dimen/dimen_12dp"
+            android:layout_marginTop="@dimen/dimen_20dp"
+            android:layout_below="@+id/tvTime"/>
+
+        <RelativeLayout
+            android:id="@+id/vCategory"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_45sdp"
+            android:layout_below="@+id/edtTitulo"
+            android:background="@drawable/background_edittext_gray"
+            android:layout_marginTop="@dimen/_20sdp">
+
+            <Spinner
+                android:id="@+id/edtCategory"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_gravity="left"
+                android:background="@android:color/transparent"
+                android:dropDownVerticalOffset="@dimen/_15sdp"
+                android:overlapAnchor="false"
+                android:spinnerMode="dropdown" />
+            <RelativeLayout
+                android:id="@+id/vArrowCategory"
+                android:layout_width="@dimen/_60sdp"
+                android:layout_height="match_parent"
+                android:background="@drawable/background_edittext_gray"
+                android:layout_alignParentRight="true">
+                <ImageView
+                    android:layout_width="@dimen/_18sdp"
+                    android:layout_height="@dimen/_18sdp"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/ic_arrow_down"/>
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <EditText
+            android:id="@+id/edtDescriba"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorGrey"
+            android:gravity="top"
+            android:textSize="@dimen/font_size_normal"
+            android:hint="@string/describa_el_problema_de_forma"
+            android:background="@drawable/background_edittext_gray"
+            android:padding="@dimen/dimen_15dp"
+            android:inputType="textMultiLine"
+            android:maxLines="8"
+            android:lines="4"
+            android:layout_marginTop="@dimen/dimen_20dp"
+            android:layout_below="@+id/vCategory"/>
+
+        <Button
+            android:id="@+id/btnEnviar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/default_height_button"
+            android:background="@drawable/background_button_orange_corner"
+            android:text="@string/enviar"
+            android:textColor="@color/colorWhite"
+            android:textAllCaps="true"
+            android:textSize="@dimen/font_size_larger_normal"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="@dimen/dimen_30dp"
+            tools:layout_editor_absoluteX="20dp" />
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

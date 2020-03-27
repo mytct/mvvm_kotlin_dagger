@@ -1,0 +1,66 @@
+<resources>
+    <string name="app_name">Reversely Honduras</string>
+    <string name="no_data">No Data</string>
+    <string name="search_by_title">Search by title</string>
+    <string name="search_error">there is no such title</string>
+    <string name="news_error">there is no news</string>
+    <string name="news_details_preview">this is the news title some text to test the appearance of
+        the view It\'s time for a truly uncompromising smartphone. One that was designed and
+        manufactured by technical enthusiasts - in close coordination with the future users. A
+        smartphone that perfectly combines fascinating technology, groundbreaking design and
+        breakthrough innovation. It is time for the OnePlus 3. But do not rely on our word. Convince
+        yourself.
+    </string>
+    <string name="news_title_preview">this is the news title</string>
+    <string name="news">News</string>
+    <string name="no_internet">Please check your internet connection</string>
+    <string name="network_error">Network error, could get data,please try again!</string>
+
+    <string name="splash_title1">Smart</string>
+    <string name="splash_title2">Puerto Cortés</string>
+    <string name="splash_description">Personas &#183; Ambiente &#183; Ciudad</string>
+    <string name="iniciar">Iniciar</string>
+    <string name="crear_mi_cuenta">Crear Mi Cuenta</string>
+    <string name="escribe_tu_nombre">Escribe tu nombre...</string>
+    <string name="escribe_tu_contrasena">Escribe tu contraseña...</string>
+    <string name="icrear_mi_cuenta_ahora">iCREAR MI CUENTA AHORA!</string>
+    <string name="icrear_mi_cuenta_ahoara">&#191; Ya tienes cuenta? Inicia Aquí...</string>
+    <string name="register_full_privacy">Al crear una cuenta estás aceptando nuestros Términos y Condiciones así como nuestra Política de Privacidad y Código de Conducta.</string>
+    <string name="register_privacy_highlight_1">Términos y Condiciones</string>
+    <string name="register_privacy_highlight_2">Política de Privacidad</string>
+    <string name="register_privacy_highlight_3">Código de Conducta</string>
+    <string name="nombre_completo">Nombre Completo</string>
+    <string name="no_de_identidad">No. de Identidad</string>
+    <string name="correo_electronico">Correo Electrónico</string>
+    <string name="contrasena">Contraseña</string>
+    <string name="confirmar_contrasena">Confirmar Contraseña</string>
+    <string name="continuar">Continuar</string>
+    <string name="fecha_de_nacimiento">Fecha de Nacimiento</string>
+    <string name="direccion">Dirección</string>
+    <string name="finalizar">Finalizar</string>
+    <string name="inicio">Inicio</string>
+    <string name="mis_reportes">Mis Reportes</string>
+    <string name="mi_patronato">Mi Patronato</string>
+    <string name="ayuda">Ayuda</string>
+    <string name="cerrar_sesion">Cerrar sesión</string>
+    <string name="buenos_aires">Buenos Aires</string>
+    <string name="buenos_aires_des">Buenos Aires, Puerto Cortés, Honduras</string>
+    <string name="actualmente_realizando">Actualmente realizando campaña de concientización en el uso de la nueva aplicación...</string>
+    <string name="estructura_de_patronatos">&#191;&#191;Estructura de Patronatos ??</string>
+    <string name="solicitar_asistencia">Solicitar Asistencia</string>
+    <string name="telefono">Teléfono</string>
+    <string name="chat">Chat</string>
+    <string name="mensaje">Mensaje</string>
+    <string name="proximamente">!Proximamente…!</string>
+    <string name="exito">!ÉXITO!</string>
+    <string name="hemos_recibido_tu_reporte">Hemos recibido tu reporte.</string>
+    <string name="te_estaremos_contactando_pronto">Te estaremos contactando pronto.</string>
+    <string name="regresar">Regresar</string>
+    <string name="titulo">Titulo…</string>
+    <string name="seleccione_la_categoria">Seleccione la Categoria…</string>
+    <string name="describa_el_problema_de_forma">Describa el problema de forma clara y breve…</string>
+    <string name="enviar">Enviar</string>
+    <string name="new_description_demo">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</string>
+    <string name="ver_mas">Ver Más…</string>
+    <string name="smart_puerto_cortes">Smart - Puerto Cortés</string>
+</resources>

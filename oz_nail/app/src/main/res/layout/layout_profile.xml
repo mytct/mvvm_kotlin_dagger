@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/relativeLayout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.tctmy363839.ui.component.splash.SplashActivity">
+
+    <ImageView
+        android:id="@+id/ivLogo"
+        android:layout_width="@dimen/_40sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:contentDescription="@null"
+        android:scaleType="fitXY"
+        android:src="@drawable/logo"
+        android:layout_marginTop="@dimen/dimen_10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvTitle1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_30dp"
+        android:text="@string/splash_title1"
+        android:textColor="@color/colorGreen"
+        android:textSize="@dimen/font_size_large"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="@+id/ivLogo"
+        app:layout_constraintStart_toStartOf="@+id/ivLogo"
+        app:layout_constraintTop_toBottomOf="@+id/ivLogo"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <TextView
+        android:id="@+id/tvTitle2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/splash_title2"
+        android:textColor="@color/colorGreen"
+        android:textSize="@dimen/font_size_large"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="@+id/tvTitle1"
+        app:layout_constraintStart_toStartOf="@+id/tvTitle1"
+        app:layout_constraintTop_toBottomOf="@+id/tvTitle1"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <TextView
+        android:id="@+id/tvDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_20dp"
+        android:text="@string/splash_description"
+        android:textColor="@color/colorOrange"
+        android:textSize="@dimen/font_size_normal"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="@+id/tvTitle2"
+        app:layout_constraintStart_toStartOf="@+id/tvTitle2"
+        app:layout_constraintTop_toBottomOf="@+id/tvTitle2"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <ImageView
+        android:id="@+id/ivProfile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@null"
+        android:scaleType="fitXY"
+        android:background="@drawable/user_photo_default"
+        android:layout_marginTop="@dimen/dimen_40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvDescription" />
+
+    <TextView
+        android:id="@+id/tvInicio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/inicio"
+        android:textColor="@color/colorGray"
+        android:textSize="@dimen/font_size_normal"
+        android:layout_marginTop="@dimen/dimen_20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivProfile"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <TextView
+        android:id="@+id/tvMisReportes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/mis_reportes"
+        android:textColor="@color/colorGray"
+        android:textSize="@dimen/font_size_normal"
+        android:layout_marginTop="@dimen/dimen_20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvInicio"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <TextView
+        android:id="@+id/tvMiPatronato"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/mi_patronato"
+        android:textColor="@color/colorGray"
+        android:textSize="@dimen/font_size_normal"
+        android:layout_marginTop="@dimen/dimen_20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvMisReportes"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <TextView
+        android:id="@+id/tvAyuda"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ayuda"
+        android:textColor="@color/colorGray"
+        android:textSize="@dimen/font_size_normal"
+        android:layout_marginTop="@dimen/dimen_20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvMiPatronato"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <Button
+        android:id="@+id/btnCerrarSesion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorWhite"
+        android:text="@string/cerrar_sesion"
+        android:textAllCaps="true"
+        android:textSize="@dimen/font_size_larger_normal"
+        android:background="@drawable/background_button_orange_corner"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
